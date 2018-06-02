@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40E9F34A20C1F89C00EE5052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F34920C1F89C00EE5052 /* AppDelegate.swift */; };
+		40E9F34C20C1F89C00EE5052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F34B20C1F89C00EE5052 /* ViewController.swift */; };
+		40E9F34F20C1F89C00EE5052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E9F34D20C1F89C00EE5052 /* Main.storyboard */; };
+		40E9F35220C1F89C00EE5052 /* villoAppIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F35020C1F89C00EE5052 /* villoAppIOS.xcdatamodeld */; };
+		40E9F35420C1F89E00EE5052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E9F35320C1F89E00EE5052 /* Assets.xcassets */; };
+		40E9F35720C1F89E00EE5052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E9F35520C1F89E00EE5052 /* LaunchScreen.storyboard */; };
+		40E9F36220C1F89E00EE5052 /* villoAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F36120C1F89E00EE5052 /* villoAppIOSTests.swift */; };
+		40E9F36D20C1F89E00EE5052 /* villoAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F36C20C1F89E00EE5052 /* villoAppIOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40E9F35E20C1F89E00EE5052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40E9F33E20C1F89C00EE5052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40E9F34520C1F89C00EE5052;
+			remoteInfo = villoAppIOS;
+		};
+		40E9F36920C1F89E00EE5052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40E9F33E20C1F89C00EE5052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40E9F34520C1F89C00EE5052;
+			remoteInfo = villoAppIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40E9F34620C1F89C00EE5052 /* villoAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = villoAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E9F34920C1F89C00EE5052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40E9F34B20C1F89C00EE5052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40E9F34E20C1F89C00EE5052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40E9F35120C1F89C00EE5052 /* villoAppIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = villoAppIOS.xcdatamodel; sourceTree = "<group>"; };
+		40E9F35320C1F89E00EE5052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40E9F35620C1F89E00EE5052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40E9F35820C1F89E00EE5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E9F35D20C1F89E00EE5052 /* villoAppIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = villoAppIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E9F36120C1F89E00EE5052 /* villoAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = villoAppIOSTests.swift; sourceTree = "<group>"; };
+		40E9F36320C1F89E00EE5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E9F36820C1F89E00EE5052 /* villoAppIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = villoAppIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E9F36C20C1F89E00EE5052 /* villoAppIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = villoAppIOSUITests.swift; sourceTree = "<group>"; };
+		40E9F36E20C1F89E00EE5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40E9F34320C1F89C00EE5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E9F35A20C1F89E00EE5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E9F36520C1F89E00EE5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40E9F33D20C1F89C00EE5052 = {
+			isa = PBXGroup;
+			children = (
+				40E9F34820C1F89C00EE5052 /* villoAppIOS */,
+				40E9F36020C1F89E00EE5052 /* villoAppIOSTests */,
+				40E9F36B20C1F89E00EE5052 /* villoAppIOSUITests */,
+				40E9F34720C1F89C00EE5052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40E9F34720C1F89C00EE5052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40E9F34620C1F89C00EE5052 /* villoAppIOS.app */,
+				40E9F35D20C1F89E00EE5052 /* villoAppIOSTests.xctest */,
+				40E9F36820C1F89E00EE5052 /* villoAppIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40E9F34820C1F89C00EE5052 /* villoAppIOS */ = {
+			isa = PBXGroup;
+			children = (
+				40E9F34920C1F89C00EE5052 /* AppDelegate.swift */,
+				40E9F34B20C1F89C00EE5052 /* ViewController.swift */,
+				40E9F34D20C1F89C00EE5052 /* Main.storyboard */,
+				40E9F35320C1F89E00EE5052 /* Assets.xcassets */,
+				40E9F35520C1F89E00EE5052 /* LaunchScreen.storyboard */,
+				40E9F35820C1F89E00EE5052 /* Info.plist */,
+				40E9F35020C1F89C00EE5052 /* villoAppIOS.xcdatamodeld */,
+			);
+			path = villoAppIOS;
+			sourceTree = "<group>";
+		};
+		40E9F36020C1F89E00EE5052 /* villoAppIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				40E9F36120C1F89E00EE5052 /* villoAppIOSTests.swift */,
+				40E9F36320C1F89E00EE5052 /* Info.plist */,
+			);
+			path = villoAppIOSTests;
+			sourceTree = "<group>";
+		};
+		40E9F36B20C1F89E00EE5052 /* villoAppIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40E9F36C20C1F89E00EE5052 /* villoAppIOSUITests.swift */,
+				40E9F36E20C1F89E00EE5052 /* Info.plist */,
+			);
+			path = villoAppIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40E9F34520C1F89C00EE5052 /* villoAppIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E9F37120C1F89E00EE5052 /* Build configuration list for PBXNativeTarget "villoAppIOS" */;
+			buildPhases = (
+				40E9F34220C1F89C00EE5052 /* Sources */,
+				40E9F34320C1F89C00EE5052 /* Frameworks */,
+				40E9F34420C1F89C00EE5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = villoAppIOS;
+			productName = villoAppIOS;
+			productReference = 40E9F34620C1F89C00EE5052 /* villoAppIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40E9F35C20C1F89E00EE5052 /* villoAppIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E9F37420C1F89E00EE5052 /* Build configuration list for PBXNativeTarget "villoAppIOSTests" */;
+			buildPhases = (
+				40E9F35920C1F89E00EE5052 /* Sources */,
+				40E9F35A20C1F89E00EE5052 /* Frameworks */,
+				40E9F35B20C1F89E00EE5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40E9F35F20C1F89E00EE5052 /* PBXTargetDependency */,
+			);
+			name = villoAppIOSTests;
+			productName = villoAppIOSTests;
+			productReference = 40E9F35D20C1F89E00EE5052 /* villoAppIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40E9F36720C1F89E00EE5052 /* villoAppIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E9F37720C1F89E00EE5052 /* Build configuration list for PBXNativeTarget "villoAppIOSUITests" */;
+			buildPhases = (
+				40E9F36420C1F89E00EE5052 /* Sources */,
+				40E9F36520C1F89E00EE5052 /* Frameworks */,
+				40E9F36620C1F89E00EE5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40E9F36A20C1F89E00EE5052 /* PBXTargetDependency */,
+			);
+			name = villoAppIOSUITests;
+			productName = villoAppIOSUITests;
+			productReference = 40E9F36820C1F89E00EE5052 /* villoAppIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40E9F33E20C1F89C00EE5052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Cedric Willems";
+				TargetAttributes = {
+					40E9F34520C1F89C00EE5052 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					40E9F35C20C1F89E00EE5052 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 40E9F34520C1F89C00EE5052;
+					};
+					40E9F36720C1F89E00EE5052 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 40E9F34520C1F89C00EE5052;
+					};
+				};
+			};
+			buildConfigurationList = 40E9F34120C1F89C00EE5052 /* Build configuration list for PBXProject "villoAppIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40E9F33D20C1F89C00EE5052;
+			productRefGroup = 40E9F34720C1F89C00EE5052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40E9F34520C1F89C00EE5052 /* villoAppIOS */,
+				40E9F35C20C1F89E00EE5052 /* villoAppIOSTests */,
+				40E9F36720C1F89E00EE5052 /* villoAppIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40E9F34420C1F89C00EE5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E9F35720C1F89E00EE5052 /* LaunchScreen.storyboard in Resources */,
+				40E9F35420C1F89E00EE5052 /* Assets.xcassets in Resources */,
+				40E9F34F20C1F89C00EE5052 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E9F35B20C1F89E00EE5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E9F36620C1F89E00EE5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40E9F34220C1F89C00EE5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E9F34C20C1F89C00EE5052 /* ViewController.swift in Sources */,
+				40E9F34A20C1F89C00EE5052 /* AppDelegate.swift in Sources */,
+				40E9F35220C1F89C00EE5052 /* villoAppIOS.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E9F35920C1F89E00EE5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E9F36220C1F89E00EE5052 /* villoAppIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E9F36420C1F89E00EE5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E9F36D20C1F89E00EE5052 /* villoAppIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40E9F35F20C1F89E00EE5052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40E9F34520C1F89C00EE5052 /* villoAppIOS */;
+			targetProxy = 40E9F35E20C1F89E00EE5052 /* PBXContainerItemProxy */;
+		};
+		40E9F36A20C1F89E00EE5052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40E9F34520C1F89C00EE5052 /* villoAppIOS */;
+			targetProxy = 40E9F36920C1F89E00EE5052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40E9F34D20C1F89C00EE5052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E9F34E20C1F89C00EE5052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40E9F35520C1F89E00EE5052 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E9F35620C1F89E00EE5052 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40E9F36F20C1F89E00EE5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40E9F37020C1F89E00EE5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40E9F37220C1F89E00EE5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = villoAppIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digx.villoAppIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40E9F37320C1F89E00EE5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = villoAppIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digx.villoAppIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40E9F37520C1F89E00EE5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = villoAppIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digx.villoAppIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/villoAppIOS.app/villoAppIOS";
+			};
+			name = Debug;
+		};
+		40E9F37620C1F89E00EE5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = villoAppIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digx.villoAppIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/villoAppIOS.app/villoAppIOS";
+			};
+			name = Release;
+		};
+		40E9F37820C1F89E00EE5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = villoAppIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digx.villoAppIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = villoAppIOS;
+			};
+			name = Debug;
+		};
+		40E9F37920C1F89E00EE5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = villoAppIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digx.villoAppIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = villoAppIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40E9F34120C1F89C00EE5052 /* Build configuration list for PBXProject "villoAppIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E9F36F20C1F89E00EE5052 /* Debug */,
+				40E9F37020C1F89E00EE5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40E9F37120C1F89E00EE5052 /* Build configuration list for PBXNativeTarget "villoAppIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E9F37220C1F89E00EE5052 /* Debug */,
+				40E9F37320C1F89E00EE5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40E9F37420C1F89E00EE5052 /* Build configuration list for PBXNativeTarget "villoAppIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E9F37520C1F89E00EE5052 /* Debug */,
+				40E9F37620C1F89E00EE5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40E9F37720C1F89E00EE5052 /* Build configuration list for PBXNativeTarget "villoAppIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E9F37820C1F89E00EE5052 /* Debug */,
+				40E9F37920C1F89E00EE5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40E9F35020C1F89C00EE5052 /* villoAppIOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40E9F35120C1F89C00EE5052 /* villoAppIOS.xcdatamodel */,
+			);
+			currentVersion = 40E9F35120C1F89C00EE5052 /* villoAppIOS.xcdatamodel */;
+			path = villoAppIOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 40E9F33E20C1F89C00EE5052 /* Project object */;
+}
