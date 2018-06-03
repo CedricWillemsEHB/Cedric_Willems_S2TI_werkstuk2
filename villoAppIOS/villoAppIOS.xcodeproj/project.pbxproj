@@ -15,6 +15,7 @@
 		40E9F35720C1F89E00EE5052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E9F35520C1F89E00EE5052 /* LaunchScreen.storyboard */; };
 		40E9F36220C1F89E00EE5052 /* villoAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F36120C1F89E00EE5052 /* villoAppIOSTests.swift */; };
 		40E9F36D20C1F89E00EE5052 /* villoAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F36C20C1F89E00EE5052 /* villoAppIOSUITests.swift */; };
+		40E9F37B20C45A0E00EE5052 /* LocatieAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9F37A20C45A0E00EE5052 /* LocatieAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		40E9F36820C1F89E00EE5052 /* villoAppIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = villoAppIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E9F36C20C1F89E00EE5052 /* villoAppIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = villoAppIOSUITests.swift; sourceTree = "<group>"; };
 		40E9F36E20C1F89E00EE5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E9F37A20C45A0E00EE5052 /* LocatieAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatieAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				40E9F35520C1F89E00EE5052 /* LaunchScreen.storyboard */,
 				40E9F35820C1F89E00EE5052 /* Info.plist */,
 				40E9F35020C1F89C00EE5052 /* villoAppIOS.xcdatamodeld */,
+				40E9F37A20C45A0E00EE5052 /* LocatieAnnotation.swift */,
 			);
 			path = villoAppIOS;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				40E9F34C20C1F89C00EE5052 /* ViewController.swift in Sources */,
 				40E9F34A20C1F89C00EE5052 /* AppDelegate.swift in Sources */,
+				40E9F37B20C45A0E00EE5052 /* LocatieAnnotation.swift in Sources */,
 				40E9F35220C1F89C00EE5052 /* villoAppIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

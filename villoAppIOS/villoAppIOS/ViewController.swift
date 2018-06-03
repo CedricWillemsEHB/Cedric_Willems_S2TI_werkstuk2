@@ -8,18 +8,26 @@
 
 import UIKit
 import CoreData
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     let urlVillo = "https://api.jcdecaux.com/vls/v1/stations?apiKey=6d5071ed0d0b3b68462ad73df43fd9e5479b03d6&contract=Bruxelles-Capitale";
     
     var stations = [Station]()
-
+    
+    let manager = CLLocationManager()
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    @IBOutlet weak var hellotxt: UILabel!
+    
+    @IBOutlet weak var map: MKMapView!
     
     
     struct  Station: Decodable {
-        let name : String
+        var name : String
         let number : Int
         let address : String
         let position : Position
@@ -31,11 +39,31 @@ class ViewController: UIViewController {
         let available_bike_stands : Int
         let available_bikes : Int
         let last_update : Int64
+        
+        init(name : String, number : Int, address : String, position : Position, banking : Bool, bonus : Bool, status : String, contract_name : String, bike_stands : Int, available_bike_stands : Int, available_bikes : Int, last_update : Int64) {
+            self.name = name
+            self.number = number
+            self.address = address
+            self.position = position
+            self.banking = banking
+            self.bonus = bonus
+            self.status = status
+            self.contract_name = contract_name
+            self.bike_stands = bike_stands
+            self.available_bike_stands = available_bike_stands
+            self.available_bikes = available_bikes
+            self.last_update = last_update
+        }
     }
     
     struct Position: Decodable {
         let lat : Double
         let lng : Double
+        
+        init(lat : Double, lng : Double) {
+            self.lat = lat
+            self.lng = lng
+        }
     }
     
     override func viewDidLoad() {
@@ -47,11 +75,27 @@ class ViewController: UIViewController {
         }
         requestJSON()
         requestCoreData()
+        setInMap()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setInMap(){
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+        
+        for station in stations {
+            manager.requestWhenInUseAuthorization()
+            manager.startUpdatingLocation()
+            let location = CLLocationCoordinate2D(latitude: station.position.lat, longitude: station.position.lng)
+            let myAnnotation = LocatieAnnotation(coordinate: location)
+            map.addAnnotation(myAnnotation)
+        }
     }
     
     func deleteAllDataFromCoreData(){
@@ -87,6 +131,11 @@ class ViewController: UIViewController {
             {
                 for result in results as! [NSManagedObject]
                 {
+                    let positionOne = Position(lat: result.value(forKey: "lat") as! Double, lng: result.value(forKey: "lng") as! Double)
+                    let stationOne = Station(name: result.value(forKey: "name") as! String, number: result.value(forKey: "number")  as! Int, address: result.value(forKey: "address") as! String, position: positionOne , banking: (result.value(forKey: "banking") != nil), bonus: (result.value(forKey: "bonus") != nil), status: result.value(forKey: "status") as! String, contract_name: result.value(forKey: "contract_name") as! String, bike_stands: result.value(forKey: "bike_stands") as! Int, available_bike_stands: result.value(forKey: "available_bike_stands") as! Int, available_bikes: result.value(forKey: "available_bikes") as! Int, last_update: result.value(forKey: "last_update") as! Int64)
+                    self.stations.append(stationOne)
+                    print(stationOne)
+                    /*
                     if let stationName = result.value(forKey: "name") as? String
                     {
                         print(stationName)
@@ -95,6 +144,7 @@ class ViewController: UIViewController {
                     {
                         print(stationLat)
                     }
+                    */
                     
                 }
                 print(results.count)
