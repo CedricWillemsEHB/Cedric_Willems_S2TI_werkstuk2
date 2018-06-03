@@ -79,6 +79,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         requestJSON()
         requestCoreData()
+        selfLocation()
         setInMap()
         timetxt.text = DateFormatter.localizedString( from: NSDate() as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.short)
     }
@@ -88,12 +89,23 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         // Dispose of any resources that can be recreated.
     }
     
-    func setInMap(){
+    func selfLocation(){
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        let span: MKCoordinateSpan =  MKCoordinateSpan( latitudeDelta: 0.01,  longitudeDelta: 0.01)
+        let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        map.setRegion(region, animated: true)
+        self.map.showsUserLocation = true
+    }
+    
+    func setInMap(){
         for station in stations {
             manager.requestWhenInUseAuthorization()
             manager.startUpdatingLocation()
