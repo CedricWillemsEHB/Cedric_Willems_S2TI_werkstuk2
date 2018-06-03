@@ -22,6 +22,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var hellotxt: UILabel!
+    @IBOutlet weak var dutchBtn: UIButton!
+    @IBOutlet weak var frenchBtn: UIButton!
+    @IBOutlet weak var timetxt: UILabel!
     
     @IBOutlet weak var map: MKMapView!
     
@@ -66,6 +69,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -76,6 +80,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         requestJSON()
         requestCoreData()
         setInMap()
+        timetxt.text = DateFormatter.localizedString( from: NSDate() as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.short)
     }
 
     override func didReceiveMemoryWarning() {
@@ -156,6 +161,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         
        
+    }
+    
+    @IBAction func refreshCoreData(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.deleteAllDataFromCoreData()
+        }
+        requestJSON()
+        requestCoreData()
+        setInMap()
+        timetxt.text = DateFormatter.localizedString( from: NSDate() as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.short)
     }
     
     func requestJSON() {

@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Refresh"; ObjectID = "Nd5-L1-d6G"; */
+"Nd5-L1-d6G.normalTitle" = "Rafraichire";
+
+/* Class = "UILabel"; text = "Hello World"; ObjectID = "TJx-zA-kEV"; */
+"TJx-zA-kEV.text" = "Bienvenue Monde";
+
+/* Class = "UIButton"; normalTitle = "French"; ObjectID = "aR7-NJ-hVf"; */
+"aR7-NJ-hVf.normalTitle" = "Français";
+
+/* Class = "UIButton"; normalTitle = "Dutch"; ObjectID = "lqI-oX-u4G"; */
+"lqI-oX-u4G.normalTitle" = "Néerlandais";
+
+/* Class = "UILabel"; text = "Timestamp"; ObjectID = "vrm-ef-0qN"; */
+"vrm-ef-0qN.text" = "Temps";
